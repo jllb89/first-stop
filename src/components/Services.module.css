@@ -98,12 +98,14 @@
         max-width: 90vw;
         align-items: center;
         margin: auto;
+        padding-top: 6rem;
     }
 
     .servicesTitleFixed {
         max-width: 90vw;
         justify-content: center;
         margin: auto;
+        padding-top: 6rem;
     }
 
     .serviceSubtitle,

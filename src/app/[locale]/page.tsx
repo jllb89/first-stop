@@ -16,6 +16,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       namespaces={i18nNamespaces}>
 
       <main className={styles.main}>
+        <section id="home"> {/* Add this line */}
         <header className={styles.header}>
           <div className={styles.navbarWrapper}>
             <Navbar />
@@ -25,6 +26,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             <p className={styles.headerText}>{t('subheader')}</p>
           </div>
         </header>
+        </section>
         <section id="services"> {/* Add this line */}
           <Services />
         </section>

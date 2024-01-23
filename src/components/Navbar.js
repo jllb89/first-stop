@@ -20,17 +20,17 @@ export default function Navbar() {
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
-  
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const isScrollingUp = currentScrollY < lastScrollY;
-  
+
       setNavbarVisible(isScrollingUp || currentScrollY === 0);
       lastScrollY = currentScrollY;
     };
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -62,9 +62,9 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.navbar} ${navbarVisible ? '' : styles.hide}`}>
-    <div>
+      <Link href="/">
         <Image src="/svg/fs-logo.svg" alt="Logo" width={30} height={30} />
-      </div>
+      </Link>
       <div>
         <Link href="#services" className={styles.navLink}>{t("nav-1")}</Link>
         <Link href="#contact" className={styles.navLink}>{t("nav-2")}</Link>

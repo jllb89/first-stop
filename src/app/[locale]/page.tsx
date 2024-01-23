@@ -25,14 +25,18 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             <p className={styles.headerText}>{t('subheader')}</p>
           </div>
         </header>
-        <Services />
-        <div className={styles.contact}>
-        <p className={styles.contactText}>{t('contact-title')}</p>
-        </div>
-        <ContactForm />
+        <section id="services"> {/* Add this line */}
+          <Services />
+        </section>
+        <section id="contact"> {/* Add this line */}
+          <div className={styles.contact}>
+            <p className={styles.contactText}>{t('contact-title')}</p>
+          </div>
+          <ContactForm />
+        </section>
         <div className={styles.footer}>
             <img src="/svg/fs-logo2.svg" alt="Logo" width="100" height="50" />
-          </div>
+        </div>
       </main>
     </TranslationsProvider>
   );

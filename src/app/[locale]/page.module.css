@@ -1,5 +1,5 @@
 .header {
-  background-image: url('/images/header-bg.png');
+  background-image: url('/images/header-bg.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@
 }
 
 .contact {
-  background-image: url('/images/contact-background.png');
+  background-image: url('/images/contact-background.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
 
 .contactText {
   font-family: "light";
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 400;
   margin-bottom: 2rem;
   max-width: 50%;
@@ -62,7 +62,7 @@
   }
 
   .contactText {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -78,7 +78,7 @@
   }
 
   .contactText {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .footer {

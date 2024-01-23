@@ -1,0 +1,131 @@
+.contactFormSection {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+    align-items: center;
+}
+
+.contactFormText {
+    flex: 1;
+    margin-right: 2rem; /* Adjust as needed */
+    font-family: 'light';
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.contactFormFields {
+    flex: 1;
+    font-family: 'light';
+    text-transform: uppercase;
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+
+.contactFormFields form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormFields label {
+    margin-bottom: .7rem;
+    padding-top: 1.5rem;
+    font-size: .7rem;
+}
+
+.contactFormFields input,
+.contactFormFields select,
+.contactFormFields textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.contactFormFields input {
+    background-color: black;
+    color: white;
+    font-family: 'light';
+    font-size: 1rem;
+    border: none; /* Removes the standard border */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.417); /* Adds a white line at the bottom */
+    padding: 0.5rem; /* Adjust padding as needed */
+    margin-bottom: 1rem; /* Space below the input field */
+    outline: none;
+    transition: border-bottom 0.9s ease-in-out;
+}
+
+.contactFormFields input:focus {
+    border-bottom: 2px solid #ffffff; /* Changes the bottom border color on focus */
+}
+
+.contactFormFields textarea {
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-family: 'light';
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.417); /* Adds a white line at the bottom */
+    transition: border 0.9s ease-in-out;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    resize: none; /* Prevents resizing of the textarea */
+
+}
+
+.contactFormFields textarea:focus {
+    border: 2px solid #ffffff; /* Changes the bottom border color on focus */
+}
+
+.contactFormFields button {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    max-width: 200px;
+    background-color: black;
+    border: 1px solid white;
+    font-family: 'light';
+    color: white;
+}
+
+.phoneContainer {
+    display: flex;
+    justify-content: start;
+}
+
+.phoneContainer select {
+    margin-right: 1rem;
+}
+
+.errorText {
+    color: red; /* Adjust as needed */
+    font-size: 0.5rem;
+    margin-top: 0; /* Add this line */
+}
+
+/* Media query for small screens and mobile devices */
+@media (max-width: 768px) {
+    .contactFormSection {
+        display: block;
+        max-width: 90vw;
+        padding-top: 6rem;
+        padding-bottom: 14rem;
+        align-items: center;
+        flex-direction: column; /* Add this line */
+    }
+
+    .contactFormText {
+        margin-right: 0;
+        padding-bottom: 4rem;
+    }
+
+    .contactFormFields {
+        padding-left: 0;
+    }
+
+    .contactFormFields input {
+        padding: none; /* Adjust padding as needed */
+        margin-bottom: .5rem; /* Space below the input field */
+    }
+}

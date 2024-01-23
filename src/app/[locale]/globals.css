@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "main";
+  src: url("/fonts/swiss721.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("/fonts/swiss721-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bt";
+  src: url("/fonts/swiss721bt.ttf") format("truetype");
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  margin-top: 0px;
+}
+
+a:any-link {
+  color: white;
+  text-decoration-line: none;
+  cursor: auto;
+  }
